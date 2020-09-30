@@ -12,7 +12,7 @@ RUN apt update \
         xsltproc \
         wget \
         unzip \
-        python \
+        python3 \
     && rm -rf /var/lib/apt/lists/*
 
 COPY /work/imagebuilder /openwrt-imagebuilder
