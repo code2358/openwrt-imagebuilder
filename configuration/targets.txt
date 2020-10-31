@@ -1,4 +1,5 @@
 x86/64
 ath79/generic
 ipq806x/generic
+brcm2708/bcm2710
 
