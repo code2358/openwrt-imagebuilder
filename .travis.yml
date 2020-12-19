@@ -1,4 +1,4 @@
 services:
   - docker
 
-script: bash scripts/build-all.sh snapshot docker.io code2358
+script: bash scripts/build-all.sh $TRAVIS_BRANCH docker.io code2358

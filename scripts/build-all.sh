@@ -13,6 +13,10 @@ RELEASE="${1}"
 DOCKER_REGISTRY="${2:-}"
 DOCKER_REGISTRY_GROUP="${3:-}"
 
+if [ "${RELEASE}" == "master" ]; then
+    RELEASE="snapshot"
+fi
+
 TARGETS=$(cat "${CONFIGURATION_DIR}"/targets.txt)
 
 for TARGET_FULL in ${TARGETS}; do
